@@ -11,7 +11,7 @@
 
 .products__recicle-bin {
     cursor: pointer;
-    background: url(../../assets/img/recicle_bin.svg);
+    background: url(../../assets/recicle_bin.svg);
     border: none;
     position: absolute;
     top: 0.5rem;
@@ -22,7 +22,7 @@
 
 .products__pen-edit {
     cursor: pointer;
-    background: url(../../assets/img/pen.svg);
+    background: url(../../assets/pen.svg);
     border: none;
     position: absolute;
     top: 0.5rem;
