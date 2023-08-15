@@ -1,0 +1,35 @@
+.header__search-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: var(--light-grey);
+
+    border: none;
+    border-radius: 20px;
+
+    width: 17rem;
+    height: 2.5rem;
+}
+
+.header__input-box {
+    background: var(--light-grey);
+    border: none;
+    color: var(--medium-grey);
+    box-sizing: border-box;
+    padding: 1rem;
+    font-family: var(--Raleway);
+    width: 13rem;
+    height: 1rem;
+}
+
+.header__input-box::placeholder {
+    color: var(--medium-grey);
+    padding: 1rem;
+    font-family: var(--Raleway);
+}
+
+@media screen and (max-width: 426px) {
+    .header__search-box {
+        display: none;
+    }
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <link rel="icon" type="image/png" href="../../assets/Logo.png" />
+
+      <!-- -----FONTS----- -->
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
+         rel="stylesheet"
+      />
+
+      <!-- -----CSS----- -->
+
+      <link rel="stylesheet" href="../css/style.css" />
+      <link rel="stylesheet" href="../css/reset.css" />
+
+      <!-- -----HEADER----- -->
+
+      <link rel="stylesheet" href="../css/home/header/header-box.css" />
+      <link rel="stylesheet" href="../css/home/header/header-button.css" />
+      <link rel="stylesheet" href="../css/home/header/header-container.css" />
+      <link rel="stylesheet" href="../css/home/header/header-logo.css" />
+      <link rel="stylesheet" href="../css/home/header/header-search-box.css" />
+
+      <!-- -----LOGIN----- -->
+
+      <link rel="stylesheet" href="../css/home-login/login-button.css" />
+      <link rel="stylesheet" href="../css/home-login/login-container.css" />
+      <link rel="stylesheet" href="../css/home-login/login-field.css" />
+      <link rel="stylesheet" href="../css/home-login/login-form.css" />
+      <link rel="stylesheet" href="../css/home-login/login-title.css" />
+
+      <!-- -----FOOTER----- -->
+      <link rel="stylesheet" href="../css/home/footer/footer-about.css" />
+      <link rel="stylesheet" href="../css/home/footer/footer-container.css" />
+      <link rel="stylesheet" href="../css/home/footer/footer-content.css" />
+      <link rel="stylesheet" href="../css/home/footer/footer-form-button.css" />
+      <link rel="stylesheet" href="../css/home/footer/footer-form-field.css" />
+      <link rel="stylesheet" href="../css/home/footer/footer-form-label.css" />
+      <link rel="stylesheet" href="../css/home/footer/footer-form-title.css" />
+      <link rel="stylesheet" href="../css/home/footer/footer-form.css" />
+      <link rel="stylesheet" href="../css/home/footer/footer-logo.css" />
+
+      <link rel="stylesheet" href="../css/home/footer/footer-developer.css" />
+
+      <title>Alura Geek - login</title>
+   </head>
+   <body>
+      <header class="header__container">
+         <div class="header__box header__box-all">
+            <div class="header__box-left">
+               <a href="../index.html">
+                  <img
+                     src="../assets/Logo.png"
+                     alt="alurageek logo"
+                     class="header__logo"
+                  />
+               </a>
+               <div class="header__search-box">
+                  <input
+                     placeholder="O que deseja encontrar?"
+                     type="text"
+                     class="header__input-box"
+                     data-search
+                  />
+                  <button
+                     class="header__button-magnifier"
+                     data-search-btn
+                  ></button>
+               </div>
+            </div>
+         </div>
+      </header>
+      <main>
+         <section class="login__container">
+            <h4 class="login__title">Iniciar Sessão</h4>
+            <form class="login__form" type="submit" data-user-login>
+               <fieldset class="login__field-box">
+                  <input
+                     name="email"
+                     id="email"
+                     type="email"
+                     placeholder="Escreva seu email"
+                     minlength="5"
+                     class="login__field login__field-email"
+                     required
+                     data-user-email
+                  />
+                  <span class="error-message"></span>
+               </fieldset>
+               <fieldset class="login__field-box">
+                  <input
+                     name="password"
+                     id="password"
+                     type="password"
+                     placeholder="Escreva sua senha"
+                     minlength="8"
+                     class="login__field login__field-password"
+                     required
+                     data-user-password
+                  />
+                  <span class="error-message"></span>
+               </fieldset>
+               <input
+                  value="Entrar"
+                  class="login__button"
+                  id="enviar"
+                  type="submit"
+                  data-button-login
+               />
+            </form>
+            <a href="home-registration.html" class="login__registration"
+               >Não possui cadastro? Faça já o seu.</a
+            >
+         </section>
+      </main>
+      <footer class="footer__container">
+         <section class="footer__content">
+            <div class="footer__about">
+               <a href="#">
+                  <img
+                     src="../assets/alurageek-logo.svg"
+                     alt="alurageek logo"
+                     class="footer__logo"
+                  />
+               </a>
+
+               <ul class="footer__about-list">
+                  <li class="footer__about-list-item">
+                     <a href="#" class="footer__about-list-item-link"
+                        >Quem somos nós</a
+                     >
+                  </li>
+                  <li class="footer__about-list-item">
+                     <a href="#" class="footer__about-list-item-link"
+                        >Política de privacidade</a
+                     >
+                  </li>
+                  <li class="footer__about-list-item">
+                     <a href="#" class="footer__about-list-item-link"
+                        >Programa fidelidade</a
+                     >
+                  </li>
+                  <li class="footer__about-list-item">
+                     <a href="#" class="footer__about-list-item-link"
+                        >Nossas lojas</a
+                     >
+                  </li>
+                  <li class="footer__about-list-item">
+                     <a href="#" class="footer__about-list-item-link"
+                        >Quero ser franqueado</a
+                     >
+                  </li>
+                  <li class="footer__about-list-item">
+                     <a href="#" class="footer__about-list-item-link"
+                        >Anuncie aqui</a
+                     >
+                  </li>
+               </ul>
+            </div>
+            <form class="footer__form" action="submit" data-form>
+               <p class="footer__form-title">Fale conosco</p>
+               <fieldset class="footer__form-field">
+                  <label class="footer__form-label" for="nome">nome</label>
+                  <input
+                     name="name"
+                     id="nome"
+                     maxlength="40"
+                     minlength="3"
+                     type="text"
+                     class="footer__form-field-text"
+                     required
+                  />
+                  <span class="error-message"></span>
+               </fieldset>
+               <fieldset class="footer__form-field footer__form-field-message">
+                  <label
+                     class="footer__form-label footer__form-label-message"
+                     for="message"
+                     >Escreva sua mensagem</label
+                  >
+                  <textarea
+                     name="message"
+                     id="message"
+                     type="text"
+                     maxlength="120"
+                     minlenght="2"
+                     class="footer__form-field-text footer__form-field-text-message"
+                     required
+                  ></textarea>
+                  <span class="error-message"></span>
+               </fieldset>
+
+               <button type="submit" class="footer__form-button">
+                  Enviar mensagem
+               </button>
+            </form>
+         </section>
+         <section class="footer__developer-container">
+            <p class="footer__developer-text">
+               Desenvolvido por Wallace Tadeu<br />2023
+            </p>
+         </section>
+      </footer>
+      <script src="../JS/main.js" type="module"></script>
+      <script src="../JS/controllers/user-login.js" type="module"></script>
+   </body>
+</html>

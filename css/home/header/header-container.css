@@ -1,0 +1,32 @@
+.header__container {
+    align-items: center;
+    background: var(--white);
+
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    height: 4.5rem;
+    padding: 0 2rem;
+}
+
+.header__hidden {
+    display: none;
+}
+
+@media screen and (max-width: 426px) {
+    .header__container {
+        gap: 1rem;
+        padding: 1rem;
+        justify-content: center;
+    }
+
+    .header__hidden {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 729px) {
+    .header__container {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,18 @@
+.products__area-add {
+    align-self: stretch;
+    border-bottom: 0.1rem solid var(--medium-light-grey);
+    display: flex;
+    padding-top: 0.3rem;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    background: var(--white);
+    border-radius: 0.25rem;
+}
+
+.products__area-edit {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: fit-content;
+}

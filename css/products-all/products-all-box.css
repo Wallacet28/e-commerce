@@ -1,0 +1,25 @@
+.products__box-all {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 1rem;
+    height: fit-content;
+    width: 71rem;
+}
+
+@media screen and (max-width: 769px) {
+    .products__box-all {
+        justify-content: flex-start;
+        gap: 1rem;
+        height: fit-content;
+        width: 44rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .products__box-all {
+        gap: 0.5rem;
+        height: fit-content;
+        width: 22.5rem;
+    }
+}

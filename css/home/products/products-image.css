@@ -1,0 +1,18 @@
+ .products__image {
+     height: 10.875rem;
+     flex-shrink: 0;
+ }
+
+ .products__arrow {
+     height: 0.875rem;
+     width: 0.875rem;
+     /* flex-shrink: 0; */
+ }
+
+ @media screen and (max-width: 426px) {
+     .products__image {
+         width: auto;
+         height: auto;
+         flex-shrink: 0;
+     }
+ }

@@ -1,0 +1,20 @@
+.footer__developer-container {
+   align-items: center;
+   display: flex;
+   justify-content: center;
+
+   background: var(--white);
+   padding: 0;
+   height: 6.375rem;
+}
+.footer__developer-text {
+   text-align: center;
+   font-weight: 500;
+}
+@media screen and (max-width: 426px) {
+   .footer__developer-container {
+      box-sizing: border-box;
+      padding: 0;
+      height: 6.375rem;
+   }
+}

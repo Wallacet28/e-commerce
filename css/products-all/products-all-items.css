@@ -1,0 +1,16 @@
+@media screen and (max-width: 769px) {
+    .products__items-all {
+        position: relative;
+        gap: 05rem;
+        width: 10.25rem;
+
+        flex-shrink: 0;
+        align-self: stretch;
+    }
+}
+
+.products__items-all {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}

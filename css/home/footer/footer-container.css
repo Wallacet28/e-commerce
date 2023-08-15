@@ -1,0 +1,13 @@
+.footer__container {
+   background: var(--light-blue);
+
+   box-sizing: border-box;
+
+   height: 22.75rem;
+}
+
+@media screen and (max-width: 426px) {
+   .footer__container {
+      height: 34.5625rem;
+   }
+}

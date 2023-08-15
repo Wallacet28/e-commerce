@@ -1,0 +1,62 @@
+.products__image-all {
+    height: 10.875rem;
+    width: 11rem;
+}
+
+.products__image-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.products__recicle-bin {
+    cursor: pointer;
+    background: url(../../assets/img/recicle_bin.svg);
+    border: none;
+    position: absolute;
+    top: 0.5rem;
+    left: 6.5rem;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.products__pen-edit {
+    cursor: pointer;
+    background: url(../../assets/img/pen.svg);
+    border: none;
+    position: absolute;
+    top: 0.5rem;
+    left: 9rem;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+@media screen and (max-width: 769px) {
+    .products__image-all {
+        height: 10.1091rem;
+        width: 10.25rem;
+    }
+
+    .products__recicle-bin {
+        left: 5.5rem;
+    }
+
+    .products__pen-edit {
+        left: 8rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .products__image-all {
+        height: 9.0675rem;
+        width: 9.75rem;
+    }
+
+    .products__recicle-bin {
+        left: 5.5rem;
+    }
+
+    .products__pen-edit {
+        left: 8rem;
+    }
+}

@@ -1,0 +1,7 @@
+.products__home-search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    gap: 1rem;
+}

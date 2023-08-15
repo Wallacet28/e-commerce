@@ -1,0 +1,6 @@
+.products__more {
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+ }

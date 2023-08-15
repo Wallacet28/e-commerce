@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <link rel="icon" type="image/png" href="../../assets/img/Logo.png" />
+
+      <!-- -----FONTS----- -->
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
+         rel="stylesheet"
+      />
+
+      <!-- -----CSS----- -->
+
+      <link rel="stylesheet" href="../css/style.css" />
+      <link rel="stylesheet" href="../css/reset.css" />
+
+      <!-- -----HEADER----- -->
+
+      <link rel="stylesheet" href="../css/home/header/header-box.css" />
+      <link rel="stylesheet" href="../css/home/header/header-button.css" />
+      <link rel="stylesheet" href="../css/home/header/header-container.css" />
+      <link rel="stylesheet" href="../css/home/header/header-logo.css" />
+      <link rel="stylesheet" href="../css/home/header/header-search-box.css" />
+
+      <!-- -----ADD ITEMS----- -->
+
+      <link rel="stylesheet" href="../css/products-add/products-add-area.css" />
+      <link rel="stylesheet" href="../css/products-add/products-add-box.css" />
+      <link
+         rel="stylesheet"
+         href="../css/products-add/products-add-button.css"
+      />
+      <link
+         rel="stylesheet"
+         href="../css/products-add/products-add-container.css"
+      />
+      <link
+         rel="stylesheet"
+         href="../css/products-add/products-add-label.css"
+      />
+      <link
+         rel="stylesheet"
+         href="../css/products-add/products-add-message.css"
+      />
+      <link rel="stylesheet" href="../css/products-add/products-add-text.css" />
+      <link
+         rel="stylesheet"
+         href="../css/products-add/products-add-title.css"
+      />
+
+      <!-- -----FOOTER----- -->
+      <link rel="stylesheet" href="../css/home/footer/footer-about.css" />
+      <link rel="stylesheet" href="../css/home/footer/footer-container.css" />
+      <link rel="stylesheet" href="../css/home/footer/footer-content.css" />
+      <link rel="stylesheet" href="../css/home/footer/footer-form-button.css" />
+      <link rel="stylesheet" href="../css/home/footer/footer-form-field.css" />
+      <link rel="stylesheet" href="../css/home/footer/footer-form-label.css" />
+      <link rel="stylesheet" href="../css/home/footer/footer-form-title.css" />
+      <link rel="stylesheet" href="../css/home/footer/footer-form.css" />
+      <link rel="stylesheet" href="../css/home/footer/footer-logo.css" />
+
+      <link rel="stylesheet" href="../css/home/footer/footer-developer.css" />
+      <link rel="stylesheet" href="../css/home/products/products-link.css" />
+
+      <title>Alura Geek - Adicionar produtos</title>
+   </head>
+   <body>
+      <header class="header__container">
+         <div class="header__box header__box-all">
+            <div class="header__box-left">
+               <a href="../index.html">
+                  <img
+                     src="../assets/img/Logo.png"
+                     alt="alurageek logo"
+                     class="header__logo"
+                  />
+               </a>
+               <div class="header__search-box">
+                  <input
+                     placeholder="O que deseja encontrar?"
+                     type="text"
+                     class="header__input-box"
+                     data-search
+                  />
+                  <button
+                     class="header__button-magnifier"
+                     data-search-btn
+                  ></button>
+               </div>
+            </div>
+            <a class="header__button-link" href="./home-login.html"
+               ><button class="header__button">Menu administrador</button></a
+            >
+         </div>
+      </header>
+      <main>
+         <section class="products__container products__container-add">
+            <form class="products__box products__box-add" data-add-product>
+               <h4 class="products__title-add">Adicionar novo produto</h4>
+
+               <div class="products__area-add">
+                  <label for="url" class="products__label-add"
+                     >URL da imagem</label
+                  >
+                  <input
+                     id="url"
+                     name="url"
+                     type="url"
+                     minlength="3"
+                     class="products__text-add"
+                     required
+                     data-add-url
+                  />
+                  <span class="error-message"></span>
+               </div>
+
+               <div class="products__area-add">
+                  <label for="category" class="products__label-add"
+                     >Categoria</label
+                  ><input
+                     id="category"
+                     name="category"
+                     type="text"
+                     class="products__text-add"
+                     minlength="3"
+                     required
+                     data-add-category
+                  />
+                  <span class="error-message"></span>
+               </div>
+
+               <div class="products__area-add">
+                  <label for="name" class="products__label-add"
+                     >Nome do produto</label
+                  ><input
+                     id="itemName"
+                     name="name"
+                     type="text"
+                     class="products__text-add"
+                     minlength="3"
+                     required
+                     data-add-name
+                  />
+                  <span class="error-message"></span>
+               </div>
+
+               <div class="products__area-add">
+                  <label for="price" class="products__label-add"
+                     >Preço do produto</label
+                  ><input
+                     id="price"
+                     name="price"
+                     type="number"
+                     class="products__text-add"
+                     required
+                     data-add-price
+                  />
+                  <span class="error-message"></span>
+               </div>
+
+               <div class="products__area-add">
+                  <label for="description" class="products__label-add"
+                     >Descrição do produto</label
+                  >
+                  <textarea
+                     name="description"
+                     id="description"
+                     class="products__text-add products__message-add"
+                     required
+                     data-add-description
+                  ></textarea>
+                  <span class="error-message"></span>
+               </div>
+
+               <input
+                  value="Adicionar produto"
+                  type="submit"
+                  class="products__button-add"
+               />
+
+               <a class="products__link" href="javascript:history.go(-1)"
+                  >voltar</a
+               >
+            </form>
+         </section>
+      </main>
+      <footer class="footer__container">
+         <section class="footer__content">
+            <div class="footer__about">
+               <a href="#">
+                  <img
+                     src="../assets/img/alurageek-logo.svg"
+                     alt="alurageek logo"
+                     class="footer__logo"
+                  />
+               </a>
+
+               <ul class="footer__about-list">
+                  <li class="footer__about-list-item">
+                     <a href="#" class="footer__about-list-item-link"
+                        >Quem somos nós</a
+                     >
+                  </li>
+                  <li class="footer__about-list-item">
+                     <a href="#" class="footer__about-list-item-link"
+                        >Política de privacidade</a
+                     >
+                  </li>
+                  <li class="footer__about-list-item">
+                     <a href="#" class="footer__about-list-item-link"
+                        >Programa fidelidade</a
+                     >
+                  </li>
+                  <li class="footer__about-list-item">
+                     <a href="#" class="footer__about-list-item-link"
+                        >Nossas lojas</a
+                     >
+                  </li>
+                  <li class="footer__about-list-item">
+                     <a href="#" class="footer__about-list-item-link"
+                        >Quero ser franqueado</a
+                     >
+                  </li>
+                  <li class="footer__about-list-item">
+                     <a href="#" class="footer__about-list-item-link"
+                        >Anuncie aqui</a
+                     >
+                  </li>
+               </ul>
+            </div>
+            <form class="footer__form" action="submit" data-form>
+               <p class="footer__form-title">Fale conosco</p>
+               <fieldset class="footer__form-field">
+                  <label class="footer__form-label" for="nome">nome</label>
+                  <input
+                     name="name"
+                     id="nome"
+                     maxlength="40"
+                     minlength="3"
+                     type="text"
+                     class="footer__form-field-text"
+                     required
+                  />
+                  <span class="error-message"></span>
+               </fieldset>
+               <fieldset class="footer__form-field footer__form-field-message">
+                  <label
+                     class="footer__form-label footer__form-label-message"
+                     for="message"
+                     >Escreva sua mensagem</label
+                  >
+                  <textarea
+                     name="message"
+                     id="message"
+                     type="text"
+                     maxlength="120"
+                     minlenght="2"
+                     class="footer__form-field-text footer__form-field-text-message"
+                     required
+                  ></textarea>
+                  <span class="error-message"></span>
+               </fieldset>
+
+               <button type="submit" class="footer__form-button">
+                  Enviar mensagem
+               </button>
+            </form>
+         </section>
+         <section class="footer__developer-container">
+            <p class="footer__developer-text">
+               Desenvolvido por Wallace Tadeu <br />2021
+            </p>
+         </section>
+      </footer>
+      <script src="../JS/main.js" type="module"></script>
+      <script
+         src="../JS/controllers/products-add-item.js"
+         type="module"
+      ></script>
+   </body>
+</html>

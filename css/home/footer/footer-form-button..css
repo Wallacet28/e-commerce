@@ -1,0 +1,9 @@
+.footer__form-button {
+    background: var(--cyan);
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+
+    width: 9.4375rem;
+    height: 2.5rem;
+}
